@@ -51,7 +51,7 @@ class XmlUtils
         }
 
         $internalErrors = libxml_use_internal_errors(true);
-        if (\LIBXML_VERSION < 20900) {
+        if (\LIBXML_VERSION < 20900 && \PHP_VERSION_ID < 80000) {
             $disableEntities = libxml_disable_entity_loader(true);
         }
         libxml_clear_errors();
@@ -59,7 +59,7 @@ class XmlUtils
         $dom = new \DOMDocument();
         $dom->validateOnParse = true;
         if (!$dom->loadXML($content, \LIBXML_NONET | (\defined('LIBXML_COMPACT') ? \LIBXML_COMPACT : 0))) {
-            if (\LIBXML_VERSION < 20900) {
+            if (\LIBXML_VERSION < 20900 && \PHP_VERSION_ID < 80000) {
                 libxml_disable_entity_loader($disableEntities);
             }
 
@@ -69,7 +69,7 @@ class XmlUtils
         $dom->normalizeDocument();
 
         libxml_use_internal_errors($internalErrors);
-        if (\LIBXML_VERSION < 20900) {
+        if (\LIBXML_VERSION < 20900 && \PHP_VERSION_ID < 80000) {
             libxml_disable_entity_loader($disableEntities);
         }
 

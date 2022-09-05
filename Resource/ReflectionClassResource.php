@@ -60,7 +60,7 @@ class ReflectionClassResource implements SelfCheckingResourceInterface, \Seriali
     /**
      * @internal
      */
-    public function serialize()
+    public function serialize(): ?string
     {
         if (null === $this->hash) {
             $this->hash = $this->computeHash();
@@ -73,9 +73,23 @@ class ReflectionClassResource implements SelfCheckingResourceInterface, \Seriali
     /**
      * @internal
      */
-    public function unserialize($serialized)
+    public function unserialize($serialized): void
     {
         list($this->files, $this->className, $this->hash) = unserialize($serialized);
+    }
+
+    public function __serialize(): array
+    {
+        if (null === $this->hash) {
+            $this->hash = $this->computeHash();
+            $this->loadFiles($this->classReflector);
+        }
+        return [$this->files, $this->className, $this->hash];
+    }
+
+    public function __unserialize(array $data): void
+    {
+        [$this->files, $this->className, $this->hash] = $data;
     }
 
     private function loadFiles(\ReflectionClass $class)

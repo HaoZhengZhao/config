@@ -93,10 +93,24 @@ class GlobResource implements \IteratorAggregate, SelfCheckingResourceInterface,
         list($this->prefix, $this->pattern, $this->recursive, $this->hash) = unserialize($serialized);
     }
 
-    public function getIterator()
+    public function __serialize(): array
+    {
+        if (null === $this->hash) {
+            $this->hash = $this->computeHash();
+        }
+
+        return [$this->prefix, $this->pattern, $this->recursive, $this->hash];
+    }
+
+    public function __unserialize(array $data): void
+    {
+        [$this->prefix, $this->pattern, $this->recursive, $this->hash] = $data;
+    }
+
+    public function getIterator(): \Traversable
     {
         if (!file_exists($this->prefix) || (!$this->recursive && '' === $this->pattern)) {
-            return;
+            return new \ArrayIterator();
         }
 
         if (0 !== strpos($this->prefix, 'phar://') && false === strpos($this->pattern, '/**/') && (\defined('GLOB_BRACE') || false === strpos($this->pattern, '{'))) {

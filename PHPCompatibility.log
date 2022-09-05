@@ -1,0 +1,210 @@
+
+FILE: /work/php/packages/config/Tests/Util/XmlUtilsTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AND 4 WARNINGS AFFECTING 5 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 171 | ERROR   | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0xFF'
+ 203 | WARNING | Function libxml_disable_entity_loader() is deprecated since PHP 8.0
+ 225 | WARNING | Function libxml_disable_entity_loader() is deprecated since PHP 8.0
+ 226 | WARNING | Function libxml_disable_entity_loader() is deprecated since PHP 8.0
+ 228 | WARNING | Function libxml_disable_entity_loader() is deprecated since PHP 8.0
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/FileResourceTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/ComposerResourceTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/ResourceStub.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/FileExistenceResourceTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/ReflectionClassResourceTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/DirectoryResourceTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/ClassExistenceResourceTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Resource/GlobResourceTest.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Tests/Fixtures/Resource/ConditionalClass.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 3 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+   |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Util/XmlUtils.php
+------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 3 WARNINGS AFFECTING 3 LINES
+------------------------------------------------------------------------------------
+ 55 | WARNING | Function libxml_disable_entity_loader() is deprecated since PHP 8.0
+ 63 | WARNING | Function libxml_disable_entity_loader() is deprecated since PHP 8.0
+ 73 | WARNING | Function libxml_disable_entity_loader() is deprecated since PHP 8.0
+------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/ResourceInterface.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/ReflectionClassResource.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+ 20 | WARNING | "Only Serializable" classes are deprecated since PHP 8.1. The magic __serialize() and __unserialize() methods need to be implemented for
+    |         | cross-version compatibility. Missing implementation of: __serialize() and __unserialize()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/FileExistenceResource.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+ 22 | WARNING | "Only Serializable" classes are deprecated since PHP 8.1. The magic __serialize() and __unserialize() methods need to be implemented for
+    |         | cross-version compatibility. Missing implementation of: __serialize() and __unserialize()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/SelfCheckingResourceChecker.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/SelfCheckingResourceInterface.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/DirectoryResource.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+ 19 | WARNING | "Only Serializable" classes are deprecated since PHP 8.1. The magic __serialize() and __unserialize() methods need to be implemented for
+    |         | cross-version compatibility. Missing implementation of: __serialize() and __unserialize()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/ComposerResource.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+ 19 | WARNING | "Only Serializable" classes are deprecated since PHP 8.1. The magic __serialize() and __unserialize() methods need to be implemented for
+    |         | cross-version compatibility. Missing implementation of: __serialize() and __unserialize()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/ClassExistenceResource.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 3 WARNINGS AFFECTING 3 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+     |         | namespace (T_NAMESPACE)
+  22 | WARNING | "Only Serializable" classes are deprecated since PHP 8.1. The magic __serialize() and __unserialize() methods need to be implemented for
+     |         | cross-version compatibility. Missing implementation of: __serialize() and __unserialize()
+ 187 | WARNING | Since PHP 7.0, functions inspecting arguments, like debug_backtrace(), no longer report the original value as passed to a parameter, but will
+     |         | instead provide the current value. The parameter "$previous" was used, and possibly changed (by reference), on line 155.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/GlobResource.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+ 24 | WARNING | "Only Serializable" classes are deprecated since PHP 8.1. The magic __serialize() and __unserialize() methods need to be implemented for
+    |         | cross-version compatibility. Missing implementation of: __serialize() and __unserialize()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /work/php/packages/config/Resource/FileResource.php
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | 'resource' is a soft reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a
+    |         | namespace (T_NAMESPACE)
+ 21 | WARNING | "Only Serializable" classes are deprecated since PHP 8.1. The magic __serialize() and __unserialize() methods need to be implemented for
+    |         | cross-version compatibility. Missing implementation of: __serialize() and __unserialize()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

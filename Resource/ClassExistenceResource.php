@@ -126,7 +126,25 @@ class ClassExistenceResource implements SelfCheckingResourceInterface, \Serializ
      */
     public function unserialize($serialized)
     {
-        list($this->resource, $this->exists) = unserialize($serialized);
+        [$this->resource, $this->exists] = unserialize($serialized);
+
+        if (\is_bool($this->exists)) {
+            $this->exists = [$this->exists, null];
+        }
+    }
+
+    public function __serialize(): array
+    {
+        if (null === $this->exists) {
+            $this->isFresh(0);
+        }
+
+        return [$this->resource, $this->exists];
+    }
+
+    public function __unserialize(array $data): void
+    {
+        [$this->resource, $this->exists] = $data;
 
         if (\is_bool($this->exists)) {
             $this->exists = [$this->exists, null];
